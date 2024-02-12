@@ -19,7 +19,8 @@ def knapsack_solver(profits, weights, max_weight):
     for i in range(len(profits)):
         max_profit += profits[i]*result_list[i]
     return max_profit
-
+# Time Complexity: O(n log n) [Sorting] + O(n) [list traversals]
+# Total Time Complexity: O(n log n)
 
 profits = [10, 5, 15, 7, 6, 18, 3]
 weights = [2, 3, 5, 7, 1, 4, 1]
